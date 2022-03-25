@@ -1,0 +1,195 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(221, 17, 85),
+    rgb(122, 26, 109)
+  );
+}
+.wrapper {
+  max-width: 1040px;
+  margin: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px 208px 80px 280px 50px 200px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+nav {
+  grid-area: 1 / 1 / 2 / 6;
+}
+
+.session1 {
+  grid-area: 2 / 1 / 3 / 6;
+}
+
+.session2 {
+  grid-area: 3 / 1 / 4 / 6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.session3 {
+  grid-area: 4/ 1 / 5 / 6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.session4 {
+  grid-area: 5/ 1 / 6 / 6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.session5 {
+  grid-area: 6/ 1 / 7 / 6;
+}
+
+.nav {
+  height: 20px;
+  width: 300px;
+  background-color: yellow;
+  text-align: center;
+  margin: 1px;
+}
+.nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.barnav {
+  display: flex;
+  padding: 1px;
+  border: 1px solid red;
+}
+
+.barcat {
+  display: flex;
+  padding-left: 1px;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+
+.cat {
+  height: 60px;
+  width: 300px;
+  background-color: white;
+  text-align: center;
+  margin: 1px;
+}
+.cat div img {
+  padding-top: 5px;
+  height: 15px;
+  width: 15px;
+}
+
+.detailcat {
+  display: flex;
+  border: 1px solid red;
+}
+
+.detailimage {
+  background-color: white;
+}
+.detailimage img {
+  width: 200px;
+  height: 200px;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.detaildesc {
+  height: 260px;
+  width: 100%;
+  background-color: white;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detaildesc div button {
+  background-color: yellow;
+}
+
+.headbarinstant {
+  display: flex;
+  height: 20px;
+}
+.imgbarleft {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(208, 255, 0)
+  );
+  height: 5px;
+  width: 500px;
+  align-self: center;
+}
+.imgbarright {
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0),
+    rgb(208, 255, 0)
+  );
+  height: 5px;
+  width: 500px;
+  align-self: center;
+}
+.titlebar {
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.photoinstant {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imginstants {
+  padding: 5px;
+  align-self: auto;
+}
+.imginstants img {
+  width: 100px;
+  height: 100px;
+}
+
+.menusession {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgmenu {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./images/taco.jpg');
+  background-position: center center;
+  margin-right: 10px;
+}
+
+.prices {
+}
+
+.pricedetail {
+  display: flex;
+  flex-direction: column;
+}
+.price {
+  background-color: yellow;
+
+  width: 320px;
+  height: 102px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.priceamount {
+  padding-top: 30px;
+}
+
+.itemdesc {
+  padding-top: 10px;
+  text-transform: capitalize;
+}
